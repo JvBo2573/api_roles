@@ -12,10 +12,10 @@ const buscarPorEmail = async (email)=>{
     return resultado.rows[0];
 }
 
-const buscaPorId = async () => {
+const buscarPorId = async (id) => {
     const sql = 'SELECT * FROM usuarios WHERE id = $1'; 
     const resultado = await pool.query(sql, [id]);
     return resultado.rows[0];
 }
 
-module.exports = { criarUsuario, buscarPorEmail, buscaPorId }
+module.exports = { criarUsuario, buscarPorEmail, buscarPorId }  

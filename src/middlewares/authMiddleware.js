@@ -20,4 +20,4 @@ const autenticarToken = async (req, res, next)=>{
     }
 }
 
-module.exports = { autenticarToken, }
+module.exports = autenticarToken 
